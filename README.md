@@ -2,6 +2,8 @@
 
 A Java GUI game that mixes a maths quiz with hangman. The game asks 10 maths questions, and every wrong answer adds one part to the hangman. Five wrong answers and the man is hanged.
 
+![Game screen](output.png)
+
 ## How it works
 
 - Each question has multiple terms using `+`, `-`, `*` and `/`
@@ -10,20 +12,18 @@ A Java GUI game that mixes a maths quiz with hangman. The game asks 10 maths que
 - The hangman is drawn in 5 parts: head, body, arms, legs and face
 - 5 wrong answers = game over, finish all 10 with fewer mistakes = you win
 
-## Classes
+## Files
 
-- `Main` starts the game
-- `GameFrame` builds the window and controls the game flow
-- `QuestionGenerator` creates the questions and calculates answers with BODMAS
-- `HangmanPanel` draws the gallows and the hangman
+- `Main.java` starts the game
+- `GameFrame.java` builds the window and controls the game flow
+- `QuestionGenerator.java` creates the questions and calculates answers with BODMAS
+- `HangmanPanel.java` draws the gallows and the hangman
 
-## How to run
+## Running the game
 
 ```bash
 javac Main.java GameFrame.java QuestionGenerator.java HangmanPanel.java
 java Main
 ```
-
-![Game screen](output.png)
 
 Originally built as my OOP semester project (Spring 2024); rebuilt and documented for this portfolio.
